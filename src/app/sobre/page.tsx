@@ -51,7 +51,7 @@ const About = () => {
             Públicas, Desigualdade Social.
           </p>
           <div className="h-[80%] rounded-lg bg-white shadow-2xl md:absolute md:-right-1/4 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
-            <div className="relative aspect-square w-full md:aspect-[9/16]">
+            <div className="relative aspect-square w-full md:aspect-auto md:h-[70%]">
               <Image
                 className="rounded-t-lg object-cover"
                 src="/CEO.jpg"

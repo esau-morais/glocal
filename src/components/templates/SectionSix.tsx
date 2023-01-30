@@ -16,7 +16,10 @@ const SectionSix = () => {
       id="contact"
       className="grid min-h-screen grid-cols-1 md:grid-cols-2"
     >
-      <div className="flex w-full flex-col items-center justify-center bg-[url(/ContactBg.png)] px-4 py-8 md:flex-row md:px-8 md:pt-0">
+      <div
+        className="flex w-full flex-col items-center justify-center bg-[url(/ContactBg.png)] px-4 py-8 md:flex-row md:space-x-2 md:px-8 md:pt-0"
+        style={{ backgroundColor: '#00FF00' }}
+      >
         <h2 className="text-[31px] font-extrabold uppercase text-black md:text-[49px]">
           Entre em contato
         </h2>
