@@ -10,7 +10,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const transporter = nodemailer.createTransport({
     host: 'smtpout.secureserver.net',
     port: 465,
-    secure: true,
     auth: {
       user: process.env.SMTP_EMAIL,
       pass: process.env.SMTP_PASS,
@@ -27,6 +26,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         <p><strong>Mensagem: </strong> ${message}</p><br>
       `,
     })
+    return res.status(200).json({ error: null })
   } catch (error) {
     if (error instanceof z.ZodError)
       return res.status(400).json({ error: error.message })
@@ -34,8 +34,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     if (error instanceof Error)
       return res.status(500).json({ error: error.message || error.toString() })
   }
-
-  return res.status(200).json({ error: null })
 }
 
 export default handler
