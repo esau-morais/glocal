@@ -16,8 +16,9 @@ const Footer = () => {
             alt="Logo"
             width={48}
             height={48}
+            loading="lazy"
           />
-          <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
+          <span className="self-center whitespace-nowrap text-2xl font-semibold text-white">
             Glocal Cidades
           </span>
         </a>

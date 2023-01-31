@@ -17,13 +17,17 @@ const Header = () => {
   const [isSticky, setSticky] = useState(false)
 
   useSSRLayoutEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 54) {
-        setSticky(true)
-      } else {
-        setSticky(false)
-      }
-    })
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (window.pageYOffset > 54) {
+          setSticky(true)
+        } else {
+          setSticky(false)
+        }
+      },
+      { passive: true }
+    )
   }, [])
 
   return (

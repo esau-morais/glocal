@@ -30,6 +30,7 @@ const SectionSix = () => {
               href="https://wa.me/5599984232483"
               target="_blank"
               rel="noreferrer"
+              aria-label="Whatsapp"
             >
               <IconBrandWhatsapp {...defaultIconProps} />
             </a>
@@ -39,6 +40,7 @@ const SectionSix = () => {
               href="https://instagram.com/glocalcidades"
               target="_blank"
               rel="noreferrer"
+              aria-label="Instagram"
             >
               <IconBrandInstagram {...defaultIconProps} />
             </a>
@@ -48,6 +50,7 @@ const SectionSix = () => {
               href="https://facebook.com/profile.php?id=100089618828794"
               target="_blank"
               rel="noreferrer"
+              aria-label="Facebook"
             >
               <IconBrandFacebook {...defaultIconProps} />
             </a>
@@ -57,6 +60,7 @@ const SectionSix = () => {
               href="https://twitter.com/glocalcidades"
               target="_blank"
               rel="noreferrer"
+              aria-label="Twitter"
             >
               <IconBrandTwitter {...defaultIconProps} />
             </a>
@@ -66,6 +70,7 @@ const SectionSix = () => {
               href="https://www.linkedin.com/company/glocal-cidades/"
               target="_blank"
               rel="noreferrer"
+              aria-label="Linkedin"
             >
               <IconBrandLinkedin {...defaultIconProps} />
             </a>
@@ -75,6 +80,7 @@ const SectionSix = () => {
               href="https://youtube.com/@glocalcidades"
               target="_blank"
               rel="noreferrer"
+              aria-label="Youtube"
             >
               <IconBrandYoutube {...defaultIconProps} />
             </a>
