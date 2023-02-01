@@ -74,7 +74,7 @@ const Belief = () => {
               <p className="text-white">
                 Contribuir para o desenvolvimento urbano, fazendo com que a
                 nossa consultoria possa ajudar no planejamento das cidades mais
-                justas, sustentáveis e inteligentes para se viver no Brasil.
+                justas.
               </p>
             </div>
           </div>
