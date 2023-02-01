@@ -61,10 +61,7 @@ const Belief = () => {
               </h2>
               <p className="text-white">
                 Compromisso com a melhoria da vida humana pela busca de cidades
-                mais iguais que contribuem para uma vida integral e justa, em
-                que os cidadãos possam desfrutar de projetos que pensam no
-                social, econômico e ambiental e que possam vivam em cidades
-                inteligentes e sustentáveis.
+                mais iguais que contribuem para uma vida integral e justas.
               </p>
             </div>
             <div className="flex flex-col items-start">
@@ -74,7 +71,7 @@ const Belief = () => {
               <p className="text-white">
                 Contribuir para o desenvolvimento urbano, fazendo com que a
                 nossa consultoria possa ajudar no planejamento das cidades mais
-                justas.
+                justas, sustentáveis e inteligentes para se viver no Brasil.
               </p>
             </div>
           </div>
