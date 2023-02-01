@@ -61,7 +61,7 @@ const Belief = () => {
               </h2>
               <p className="text-white">
                 Compromisso com a melhoria da vida humana pela busca de cidades
-                mais iguais que contribuem para uma vida integral e justas.
+                mais iguais que contribuem para uma vida integral e justa.
               </p>
             </div>
             <div className="flex flex-col items-start">
