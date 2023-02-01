@@ -1,14 +1,13 @@
 'use client'
 
 import { useForm } from 'react-hook-form'
-import { toast, ToastContainer } from 'react-toastify'
+import toast, { Toaster } from 'react-hot-toast'
 
 import { ContactValues, contactSchema } from '@/lib/validation'
 import { cx } from '@/utils/classNames'
 import { zodResolver } from '@hookform/resolvers/zod'
 
 import PolymorphicButton from '../atoms/PolymorphicButton'
-import 'react-toastify/dist/ReactToastify.css'
 
 const Form = () => {
   const {
@@ -177,7 +176,7 @@ const Form = () => {
         Enviar
       </PolymorphicButton>
 
-      <ToastContainer hideProgressBar />
+      <Toaster position="top-right" />
     </form>
   )
 }
