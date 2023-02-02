@@ -11,7 +11,7 @@ const Head = () => {
       <meta name="title" content="Glocal Cidades" />
       <meta
         name="description"
-        content="Desenvolvimento Urbano Integral: Captação de recursos, formulação de políticas públicas e regularização fiscal de prefeituras em todos o Brasil."
+        content="Desenvolvimento Urbano Integral: Captação de recursos, formulação de políticas públicas e regularização fiscal de prefeituras em todo o Brasil."
       />
 
       <meta property="og:type" content="website" />
@@ -19,7 +19,7 @@ const Head = () => {
       <meta property="og:title" content="Glocal Cidades" />
       <meta
         property="og:description"
-        content="Desenvolvimento Urbano Integral: Captação de recursos, formulação de políticas públicas e regularização fiscal de prefeituras em todos o Brasil."
+        content="Desenvolvimento Urbano Integral: Captação de recursos, formulação de políticas públicas e regularização fiscal de prefeituras em todo o Brasil."
       />
       <meta property="og:image" content="https://glocalcidades.com.br/OG.png" />
 
@@ -28,7 +28,7 @@ const Head = () => {
       <meta property="twitter:title" content="Glocal Cidades" />
       <meta
         property="twitter:description"
-        content="Desenvolvimento Urbano Integral: Captação de recursos, formulação de políticas públicas e regularização fiscal de prefeituras em todos o Brasil."
+        content="Desenvolvimento Urbano Integral: Captação de recursos, formulação de políticas públicas e regularização fiscal de prefeituras em todo o Brasil."
       />
       <meta
         property="twitter:image"
