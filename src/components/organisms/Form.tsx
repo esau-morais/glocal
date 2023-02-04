@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import toast, { Toaster } from 'react-hot-toast'
 
@@ -29,20 +30,22 @@ const Form = () => {
     })
 
     const data = await res.json()
-    if (!data.error) {
-      reset()
-      toast.success('Sua mensagem foi enviada com sucesso!')
-    } else {
-      toast.error(
-        'Algo deu errado. Tente novamente ou contate através das redes sociais.'
-      )
-    }
+    if (!data.error) reset()
+  }
+
+  const onSubmit = async (values: ContactValues) => {
+    await toast.promise(sendMessage(values), {
+      loading: 'Enviando...',
+      success: 'Sua mensagem foi enviada com sucesso!',
+      error:
+        'Algo deu errado. Tente novamente ou contate através das redes sociais.',
+    })
   }
 
   return (
     <form
       className="flex w-full flex-col items-end space-y-6"
-      onSubmit={handleSubmit(sendMessage)}
+      onSubmit={handleSubmit(onSubmit)}
     >
       <div className="w-full">
         <div className="relative z-0">
