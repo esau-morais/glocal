@@ -1,9 +1,6 @@
 const Head = () => {
   return (
     <>
-      <link rel="preload" as="image" href="/MainBg.png" />
-      <link rel="preload" as="image" href="/DifferentialsBg.png" />
-      <link rel="preload" as="image" href="/ContactBg.png" />
       <link rel="icon" href="/Favicon.ico" />
       <link rel="canonical" href="https://glocalcidades.com.br" />
       <title>Glocal Cidades</title>

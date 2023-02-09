@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -16,18 +16,15 @@ import Dialog from './Dialog'
 const Header = () => {
   const [isSticky, setSticky] = useState(false)
 
+  const onScroll = () =>
+    window.pageYOffset > 54 ? setSticky(true) : setSticky(false)
+
   useSSRLayoutEffect(() => {
-    window.addEventListener(
-      'scroll',
-      () => {
-        if (window.pageYOffset > 54) {
-          setSticky(true)
-        } else {
-          setSticky(false)
-        }
-      },
-      { passive: true }
-    )
+    window.addEventListener('scroll', () => onScroll(), { passive: true })
+  }, [])
+
+  useEffect(() => {
+    onScroll()
   }, [])
 
   return (
@@ -48,7 +45,7 @@ const Header = () => {
             alt="Logo"
             width={48}
             height={48}
-            loading="lazy"
+            priority
           />
 
           <NavigationMenu.List className="hidden md:flex md:items-center md:space-x-8">

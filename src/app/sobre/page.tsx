@@ -57,6 +57,7 @@ const About = () => {
                 src="/CEO.jpg"
                 alt=""
                 fill
+                priority
               />
             </div>
             <div className="p-4 text-center">

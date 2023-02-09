@@ -27,8 +27,23 @@ const variants = {
 
 const Belief = () => {
   return (
-    <section className="min-h-screen bg-[url(/BeliefBg.jpg)] bg-cover bg-left bg-no-repeat px-4 py-8 md:px-16">
-      <motion.div variants={variants} animate="in" initial="out" exit="out">
+    <section className="relative min-h-screen px-4 py-8 md:px-16">
+      <Image
+        className="max-w-full object-cover"
+        src="/BeliefBg.jpg"
+        alt=""
+        fill
+        draggable={false}
+        priority
+      />
+
+      <motion.div
+        className="relative"
+        variants={variants}
+        animate="in"
+        initial="out"
+        exit="out"
+      >
         <Link
           className="inline-flex items-center justify-center overflow-hidden bg-black py-2 px-4 font-bold uppercase text-white"
           href="/"
@@ -40,7 +55,7 @@ const Belief = () => {
         </Link>
         <div className="bg-[#282828] bg-opacity-95 px-8 py-4 md:px-16 md:py-8">
           <div className="relative h-[71px] w-auto">
-            <Image src="/Logo.svg" alt="Logo" fill />
+            <Image src="/Logo.svg" alt="Logo" fill loading="lazy" />
           </div>
 
           <div className="grid-col-1 grid gap-16 justify-self-center md:grid-cols-2">

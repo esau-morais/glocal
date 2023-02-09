@@ -7,9 +7,17 @@ const SectionOne = () => {
   return (
     <section
       id="main"
-      className="grid min-h-screen grid-cols-1 bg-[url(/MainBg.png)] bg-cover bg-fixed px-4 pt-[calc(88px+56px)] pb-[56px] md:grid-cols-2 md:px-16"
+      className="relative grid min-h-screen grid-cols-1 px-4 pt-[calc(88px+56px)] pb-[56px] md:grid-cols-2 md:px-16"
     >
-      <div className="flex flex-col items-start">
+      <Image
+        className="max-w-full object-cover"
+        src="/MainBg.png"
+        alt=""
+        fill
+        draggable={false}
+        priority
+      />
+      <div className="relative flex flex-col items-start">
         <h1 className="text-[31px] font-extrabold uppercase text-[#00FF00] md:text-[61px]">
           Desenvolvimento urbano integral
         </h1>
@@ -17,7 +25,7 @@ const SectionOne = () => {
           <Image src="/Logo.svg" alt="Logo" fill loading="lazy" />
         </div>
       </div>
-      <div className="flex flex-col items-start space-y-6 md:mt-auto md:h-[calc(100vh-88px-56px)] md:items-start md:self-end">
+      <div className="relative flex flex-col items-start space-y-6 md:mt-auto md:h-[calc(100vh-88px-56px)] md:items-start md:self-end">
         <p className="font-medium text-white md:mt-auto md:text-[25px]">
           Conhecimento técnico especializado para formulação e viabilização de
           políticas públicas em todas as áreas.
